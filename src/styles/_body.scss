@@ -1,0 +1,40 @@
+* {
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.field {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.cell.cross:after {
+  content: "X";
+  font-size: 180px;
+  font-family: sans-serif;
+}
+
+.cell.zero:after {
+  content: "O";
+  font-size: 180px;
+  font-family: sans-serif;
+}
